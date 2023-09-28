@@ -22,6 +22,7 @@ export const pages: PageComponentType = {
   rotatingCube: dynamic(() => import('../../sample/rotatingCube/main')),
   twoCubes: dynamic(() => import('../../sample/twoCubes/main')),
   texturedCube: dynamic(() => import('../../sample/texturedCube/main')),
+  texturedSphere: dynamic(() => import('../../sample/texturedSphere/main')),
   instancedCube: dynamic(() => import('../../sample/instancedCube/main')),
   fractalCube: dynamic(() => import('../../sample/fractalCube/main')),
   cameras: dynamic(() => import('../../sample/cameras/main')),
