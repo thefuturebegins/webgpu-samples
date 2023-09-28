@@ -47,3 +47,13 @@ nav.sourceFileNav li a[data-active=true] {
 .sourceFileContainer :global(.CodeMirror) {
   margin-top: 0;
 }
+
+.fpsContainer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 8px 10px;
+  background-color: #282823;
+  color: white;
+  font-size: 15px;
+}

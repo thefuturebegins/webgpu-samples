@@ -286,7 +286,16 @@ const init: SampleInit = async ({ canvas, pageState }) => {
     return modelViewProjectionMatrix as Float32Array;
   }
 
-  function frame() {
+  let then = 0;
+  var fpsElement = document.getElementById('fps');
+
+  function frame(now) {
+
+    now *= 0.001;                          // convert to seconds
+    const deltaTime = now - then;          // compute time since last frame
+    then = now;                            // remember time for next frame
+    const fps = 1 / deltaTime;             // compute frames per second
+    fpsElement.innerHTML = fps.toFixed(1);
 
     // Sample is no longer the active page.
     if (!pageState.active) return;

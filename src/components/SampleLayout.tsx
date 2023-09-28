@@ -196,6 +196,7 @@ const SampleLayout: React.FunctionComponent<
         >
           See it on Github!
         </a>
+        <div className={styles.fpsContainer}>FPS 🚀: <span id="fps"></span></div>
         <p>{props.description}</p>
         {error ? (
           <>
